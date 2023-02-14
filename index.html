@@ -13,24 +13,29 @@
     <title>Cover Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet"> 
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
     <link href="index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-Q8iUP/LNhBwzd+jqL3qf9hXJcKxKjAzR0WQk0hcDTTNlwvqjzAZW8q9MZOt1MkvLF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-Q8iUP/LNhBwzd+jqL3qf9hXJcKxKjAzR0WQk0hcDTTNlwvqjzAZW8q9MZOt1MkvLF" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 
     <script src="index.js"></script>
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="navbar-text">Varga Bela</div>
+        <div class="navbar-title">
+            <div class="navbar-text">Varga Bela</div>
+        </div>
         <div class="buttons">
             <a class="hover-underline-animation navbar-button" href="#fifthSection">Kapcsolat</a>
             <a class="hover-underline-animation navbar-button" href="#fourthSection">Galéria</a>
             <a class="hover-underline-animation navbar-button" href="#thirdSection">Technika</a>
-            <a class="hover-underline-animation navbar-button" href="#secondSection">Magamról</a>
+            <a class="hover-underline-animation navbar-button" href="#secondSection">Rendezvények</a>
+            <a class="hover-underline-animation navbar-button" href="#introductionSection">Bemutatkozás</a>
         </div>
         <div class="navbar-icon">
             <span></span>
@@ -39,29 +44,30 @@
         </div>
     </nav>
     <div class="navbar-small" id="navbar-small">
-        <a class="hover-underline-animation navbar-small-button" style="display: none;" href="#secondSection">Magamról</a>
-        <a class="hover-underline-animation navbar-small-button" style="display: none;" href="#thirdSection">Technika</a>
-        <a class="hover-underline-animation navbar-small-button" style="display: none;" href="#fourthSection">Galéria</a>
-        <a class="hover-underline-animation navbar-small-button" style="display: none;" href="#fourthSection">Kapcsolat</a>
+        <a class="hover-underline-animation navbar-small-button" style="display: none;"
+            href="#introductionSection">Bemutatkozás</a>
+        <a class="hover-underline-animation navbar-small-button" style="display: none;"
+            href="#secondSection">Rendezvények</a>
+        <a class="hover-underline-animation navbar-small-button" style="display: none;"
+            href="#thirdSection">Technika</a>
+        <a class="hover-underline-animation navbar-small-button" style="display: none;"
+            href="#fourthSection">Galéria</a>
+        <a class="hover-underline-animation navbar-small-button" style="display: none;"
+            href="#fourthSection">Kapcsolat</a>
     </div>
 
     <div class="firstSection fade-bg " id="firstSection">
-        <div class="slide-in-text">
+        <div>
             <h1 class="introduction">Varga Béla DJ</h1>
         </div>
     </div>
 
-    <div class="secondSection slide-in-text" id="secondSection">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            orem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. </p>
-
-    </div>
-
-    <div class="thirdSection" id="thirdSection">
-        <div class="secondSectionTextCointainer slide-in-text">
-            <h4 class="introduction">Technika:</h4>
+    <div class="section" id="introductionSection">
+        <div class="text-container">
+            <div class="sectionTitleDiv">
+                <p class="sectionTitleText">Bemutatkozás</p>
+                <span class="line"></span>
+            </div>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 orem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a
@@ -69,7 +75,47 @@
         </div>
     </div>
 
-    <div class="fourthSection " id="fourthSection">
+    <div class="section" id="secondSection">
+        <div class="content-container">
+            <div class="text-container fade-in-text">
+                <div class="sectionTitleDiv">
+                    <p class="sectionTitleText">Rendezvények</p>
+                    <span class="line"></span>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="image-container fade-in-text">
+                <img class="image-container-image" src="img/img0434.jpg" alt="Image description">
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="thirdSection">
+        <div class="content-container">
+            <div class="image-container fade-in-text">
+                <img class="image-container-image" src="img/img0435.jpg" alt="Image description">
+            </div>
+            <div class="text-container fade-in-text">
+                <div class="sectionTitleDiv">
+                    <p class="sectionTitleText">Technika</p>
+                    <span class="line"></span>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="fourthSection section" id="fourthSection">
+        <div class="text-container fade-in-text">
+            <div class="sectionTitleDiv">
+                <p class="sectionTitleText">Galéria</p>
+                <span class="line"></span>
+            </div>
+        </div>
         <div class="gallery">
             <img src="img/img0429.jpg" alt="Image 1" class="img-thumbnail">
             <img src="img/img0430.jpg" alt="Image 2" class="img-thumbnail">
@@ -79,39 +125,48 @@
             <img src="img/img0435.jpg" alt="Image 5" class="img-thumbnail">
             <img src="img/img0435.jpg" alt="Image 5" class="img-thumbnail">
             <img src="img/img0435.jpg" alt="Image 5" class="img-thumbnail">
-          </div>
+        </div>
 
-          <div class="lightbox" id="lightbox">
+        <div class="lightbox" id="lightbox">
             <span class="close" id="close">&times;</span>
             <img src="" id="lightbox-img">
             <div class="caption" id="caption"></div>
-          </div>
+        </div>
     </div>
-    
-    <div class="fifthSection " id="fifthSection">
-        <h2>Kapcsolat</h2>
+
+    <div class="fifthSection section" id="fifthSection">
+        <div class="text-container fade-in-text">
+            <div class="sectionTitleDiv">
+                <p class="sectionTitleText">Kapcsolat</p>
+                <span class="line"></span>
+            </div>
+        </div>
         <p class="contact-info">
-          <span class="email">email@gmail.com</span>
-          <span class="phone-number">+36123452532</span>
+            <span class="email">email@gmail.com</span>
+            <span class="phone-number">+36123452532</span>
         </p>
         <div class="icon-and-button-container">
-          <a href="https://www.facebook.com/bela.varga.9081" class="facebook-icon" aria-label="Link to Facebook page">
-            <i class="fab fa-facebook-square"></i>
-          </a>
-          <button id="form-modal-trigger" class="form-modal-button">Ajánlatkérés</button>
+            <a href="https://www.facebook.com/bela.varga.9081" class="facebook-icon" aria-label="Link to Facebook page">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <button id="form-modal-trigger" class="form-modal-button">Ajánlatkérés</button>
         </div>
-      </div>
+    </div>
 
     <div id="form-modal" style="display:none;">
         <div id="close-modal-button-div">
             <button id="close-modal-button"></button>
         </div>
         <div>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd0f8w-4DnJ2AqbVrzKiwidEHXuI4ukiEv5MQPEC7N-UonsKA/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe>        
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSd0f8w-4DnJ2AqbVrzKiwidEHXuI4ukiEv5MQPEC7N-UonsKA/viewform?embedded=true"
+                width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe>
         </div>
     </div>
 
-    <button class="back-to-top"> TOP </button>
+    <button class="back-to-top"> 
+        <i class="fas fa-arrow-up "></i>
+     </button>
 
     <div class="mastfoot">
         <div class="inner">

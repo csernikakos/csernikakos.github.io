@@ -67,8 +67,22 @@ window.onload = function () {
   elements.forEach((element) => {
     observer.observe(element);
   });
+  
+    $('.visible-on-load').addClass('is-visible');
 
 
+$(window).on('scroll', function() {
+  $('.fade-in-text').each(function() {
+    var top = $(this).offset().top;
+    var bottom = top + $(this).outerHeight();
+    var scrollTop = $(window).scrollTop();
+    var windowHeight = $(window).height();
+
+    if (scrollTop + windowHeight > top && scrollTop < bottom) {
+      $(this).addClass('is-visible');
+    }
+  });
+});
 
 
   const slider = document.querySelector(".fade-bg");
